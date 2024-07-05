@@ -39,9 +39,11 @@
     gap: 5px;
     position: absolute;
     bottom: 5px;
+    padding: 10px;
 }
 .footer a{
-    color: white;
+    color: gray;
+    text-decoration: none;
 }
 .header{
     justify-content:space-between ;
@@ -89,4 +91,38 @@
 }
 .arrow{
     padding-left: 10px;
+}
+.spotifyplaylist{
+    padding: 15px;
+}
+.cardContainer{
+    display: flex;
+}
+.card{
+    width:180px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(25,25,25);
+    margin-top: 5px;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card >*{
+    padding-top: 5px;
+}
+.play{
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    bottom: 38px;
+    right: 30px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.playbutton{
+    opacity: 1;
+    bottom: 110px;
 }
