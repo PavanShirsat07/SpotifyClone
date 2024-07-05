@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,50 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
 </head>
+
 <body>
     <div class="container flex">
-        <div class="left red-border">
-            <img src="img/logo.svg" alt="">
+        <div class="left">
+            <div class="home p1 gray m1 rounded">
+                <div class="logo"><img src="img/logo.svg" class="invert" alt=""></div>
+                <ul>
+                    <li> <img src="img/Home.svg" class="invert" alt="Home">Home</li>
+                    <li> <img src="img/Search.svg" class="invert" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="liblary gray rounded m1 align">
+                <div class="heading flex gap m1 align p1" style="gap:180px;">
+                    <div class="flex gap">
+                        <img src="img/liblary.svg" alt="liblary">
+                        <h4>Your Library</h4>
+                    </div>
+                    <div class="plus"><img src="img/plus.svg" alt=""></div>
+                </div>
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+            </div>
+            </div>
         </div>
-        <div class="right red-border"></div>
+        <div class="right gray rounded">
+            <div class="header flex">
+                <div class="arrow">
+                    <button><img src="img/left.svg" class="invert" alt=""></button>
+                    <button><img src="img/right.svg" class="invert" alt=""></button>
+                </div>
+                <div class="sign">
+                    <button class="sign_up">Sign up</button>
+                    <button class="log_in">Log in</button>
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+   
     <script src="script.js"></script>
 </body>
 </html>

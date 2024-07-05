@@ -1,8 +1,92 @@
-*{
-    padding: 0;
-    margin: 0;
+.container{
+    background-color: black;
 }
-body{
-    /* background-color: black; */
-    /* color: white; */
+.left {
+    flex-direction: column; /* Change direction to column for vertical alignment */
+    width: 25vw;
+    /* padding: 10px; */
+}
+.right{
+    width: 75vw;
+    margin: 10px 0;
+}
+.home{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.home ul li{
+    display: flex;
+    margin-top: 5px;
+    gap: 20px;
+    width: 22px;
+    padding-top: 15px;
+}
+.liblary{
+    height: 75vh;
+    position: relative;
+}
+.heading img{
+    width: 22px;
+    fill: gray;
+}
+.plus img{
+    width: 15px;
+    filter: invert();
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+}
+.footer a{
+    color: white;
+}
+.header{
+    justify-content:space-between ;
+    padding: 10px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 7px;
+    align-items: center;
+}
+.arrow img{
+    width: 20px;
+    /* margin: 10px; */
+}
+.log_in{
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    padding: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 90px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+.arrow button{
+    border-radius: 50%;
+    border: 2px solid;
+    display: inline;
+    background-color: black;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+.sign_up{
+    background-color: rgb(10, 10, 10);
+    color: gray;
+    border-radius: 40px;
+    padding: 15px;
+    border: 2px solid rgb(10, 10, 10);
+    cursor: pointer;
+    width: 90px;
+    font-weight: bolder;
+}
+.sign{
+    padding-right: 10px;
+}
+.arrow{
+    padding-left: 10px;
 }
