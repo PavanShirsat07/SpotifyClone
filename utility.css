@@ -38,3 +38,24 @@ body{
 .gap{
     gap: 10px;
 }
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: black; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+    border: 3px solid black; /* Padding around the thumb */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin; /* Thin scrollbar width */
+    scrollbar-color: #444 black; /* Color of the scrollbar thumb and track */
+}

@@ -9,6 +9,7 @@
 .right{
     width: 75vw;
     margin: 10px 0;
+    position: relative;
 }
 .home{
     font-family: "Roboto", sans-serif;
@@ -24,6 +25,7 @@
 .liblary{
     height: 75vh;
     position: relative;
+
 }
 .heading img{
     width: 22px;
@@ -67,6 +69,9 @@
     font-weight: bolder;
     font-size: 14px;
 }
+.log_in:hover{
+    font-size: 16px;
+}
 .arrow button{
     border-radius: 50%;
     border: 2px solid;
@@ -83,8 +88,12 @@
     padding: 15px;
     border: 2px solid rgb(10, 10, 10);
     cursor: pointer;
-    width: 90px;
+    width: 110px;
     font-weight: bolder;
+    font-size: 15px;
+}
+.sign_up:hover{
+    font-size: 16px;
 }
 .sign{
     padding-right: 10px;
@@ -97,13 +106,16 @@
 }
 .cardContainer{
     display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 70vh;
 }
 .card{
     width:180px;
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(25,25,25);
-    margin-top: 5px;
+    margin: 8px;
     position: relative;
 }
 .card img{
@@ -125,4 +137,51 @@
 .playbutton{
     opacity: 1;
     bottom: 110px;
+}
+.playbar{
+    width: 97%;
+    position:absolute;
+    background-color: aqua;
+    padding: 12px;
+    bottom: 0;
+}
+.iconbutton{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.iconbutton img{
+    width: 30px;
+}
+.songlist ul {
+    padding: 0 10px;
+    max-height: 59vh;
+    overflow-y: scroll;
+}
+
+.songlist ul li {
+    list-style-type: decimal;
+    padding: 5px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 2px solid gray;
+    margin: 10px 0;
+    padding: 6px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.info div:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; /* Adjust the width as needed */
 }

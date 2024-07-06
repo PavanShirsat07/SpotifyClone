@@ -12,7 +12,7 @@
 <body>
     <div class="container flex">
         <div class="left">
-            <div class="home p1 gray m1 rounded">
+            <div class="home p1 gray m1 rounded" style="padding: 22px;">
                 <div class="logo"><img src="img/logo.svg" class="invert" alt=""></div>
                 <ul>
                     <li> <img src="img/Home.svg" class="invert" alt="Home">Home</li>
@@ -27,14 +27,31 @@
                     </div>
                     <div class="plus"><img src="img/plus.svg" alt=""></div>
                 </div>
+                <div class="songlist">
+                    <ul>
+                        <li>
+                            <img src="img/music.svg" class="invert" alt="">
+                            <div class="info">
+                                <div>Song Name</div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img src="img/play.svg"class="invert" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="footer">
                     <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
-                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                            Center</span></a>
                     <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
                     <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
                     <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
                     <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
-            </div>
+                </div>
             </div>
         </div>
         <div class="right gray rounded">
@@ -44,13 +61,13 @@
                     <button><img src="img/right.svg" class="invert" alt=""></button>
                 </div>
                 <div class="sign">
-                    <button class="sign_up">Sign up</button>
+                    <button class="sign_up" onclick="main()">Sign up</button>
                     <button class="log_in">Log in</button>
                 </div>
             </div>
-        <div class="spotifyplaylist">
-            <h1>Spotify Playlists</h1>
-                <div class="cardContainer">
+            <div class="spotifyplaylist">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer p1">
                     <div class="card">
                         <div class="play">
                             <img src="img/play2.svg" alt="">
@@ -58,14 +75,21 @@
                         <img src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b" alt="">
                         <h2>Happy Hits!</h2>
                         <p>Hit to boost your mood and fill you with happiness!</p>
-                    
                     </div>
                 </div>
-        </div>
+            </div>
+            <div class="playbar">
+                <div class="iconbutton">
+                    <img src="img/pre.svg" alt="">
+                    <img src="img/play.svg" alt="">
+                    <img src="img/next.svg" alt="">
+                </div>
+            </div>
         </div>
     </div>
-  </div>
-   
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
