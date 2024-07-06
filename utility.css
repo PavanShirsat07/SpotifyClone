@@ -45,17 +45,17 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: black; /* Background of the scrollbar track */
+    background: rgb(132, 131, 131); /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #444; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
-    border: 3px solid black; /* Padding around the thumb */
+    background-color: #827f7f; /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Rounded corners for the scrollbar thumb */
+    border: 3px solid rgb(108, 105, 105); /* Padding around the thumb */
 }
 
 /* For Firefox */
 * {
     scrollbar-width: thin; /* Thin scrollbar width */
-    scrollbar-color: #444 black; /* Color of the scrollbar thumb and track */
+    scrollbar-color: #272727 #121212; /* Color of the scrollbar thumb and track */
 }

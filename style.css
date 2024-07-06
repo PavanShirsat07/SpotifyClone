@@ -23,7 +23,7 @@
     padding-top: 15px;
 }
 .liblary{
-    height: 75vh;
+    height: 73vh;
     position: relative;
 
 }
@@ -139,16 +139,19 @@
     bottom: 110px;
 }
 .playbar{
-    width: 97%;
-    position:absolute;
-    background-color: rgb(190, 195, 195);
+    width: 73vw;
+    position:fixed;
+    background-color: rgb(54, 54, 54);
     padding: 12px;
-    bottom: 0;
+    bottom: 20px;
+    border-radius: 20px;
 }
 .iconbutton{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
+    /* margin-right: 320px; */
 }
 .iconbutton img{
     width: 30px;
@@ -167,7 +170,7 @@
     align-items: center;
     border: 2px solid gray;
     margin: 10px 0;
-    padding: 6px;
+    padding: 12px;
     border-radius: 5px;
     justify-content: space-between;
 }
@@ -184,4 +187,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 150px;
+}
+.seekbar{
+    border: 2px solid red;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    border-radius: 20px;
 }

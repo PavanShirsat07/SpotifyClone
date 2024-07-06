@@ -40,7 +40,7 @@ async function main() {
     }
     try {
         var audio = new Audio(songs[0]);
-        audio.play();
+        // audio.play();
     } catch (e) {
         console.log("error", e);
     }
