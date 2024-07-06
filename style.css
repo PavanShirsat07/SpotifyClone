@@ -141,7 +141,7 @@
 .playbar{
     width: 97%;
     position:absolute;
-    background-color: aqua;
+    background-color: rgb(190, 195, 195);
     padding: 12px;
     bottom: 0;
 }
@@ -183,5 +183,5 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 150px; /* Adjust the width as needed */
+    max-width: 150px;
 }
