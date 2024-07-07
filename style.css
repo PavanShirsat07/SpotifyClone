@@ -139,10 +139,10 @@
     bottom: 110px;
 }
 .playbar{
-    width: 73vw;
+    width: 74vw;
     position:fixed;
     background-color: rgb(54, 54, 54);
-    padding: 12px;
+    padding: 5px;
     bottom: 20px;
     border-radius: 20px;
 
@@ -152,7 +152,10 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* margin-right: 320px; */
+    margin-bottom: 10px;
+    margin-right: 150px;
+    /* padding-right: 40px; */
+    padding-top: 10px;
 }
 .iconbutton img{
     width: 30px;
@@ -161,6 +164,7 @@
     padding: 0 10px;
     max-height: 59vh;
     overflow-y: scroll;
+    cursor: pointer;
 }
 
 .songlist ul li {
@@ -190,10 +194,44 @@
     max-width: 150px;
 }
 .seekbar{
-    border: 2px solid red;
-    height: 2px;
+    /* border: 2px solid rgb(190, 190, 190); */
+    height: 4px;
     position: absolute;
     bottom: 0;
-    width: 98%;
+    width: 97%;
     border-radius: 20px;
+    margin: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.circle{
+    position: relative;
+    background-color: rgb(234, 231, 231);
+    height: 10px;
+    width: 10px;
+    bottom: 4px;
+    left: 0%;
+    border-radius: 50px;
+    transition: left 0.5s;
+}
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    padding-right: 10px;
+    /* margin-right: 40px; */
+    margin-bottom: 10px;
+}
+.songinfo,.songtime{
+    color: white;
+}
+.songinfo{
+    width: 300px;
+    /* background-color: black; */
+    overflow: hidden;
+}
+.songtime{
+    /* padding: 10px; */
+    width: 95px;
 }
