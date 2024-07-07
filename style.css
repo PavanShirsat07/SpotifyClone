@@ -156,6 +156,7 @@
     margin-right: 150px;
     /* padding-right: 40px; */
     padding-top: 10px;
+    cursor: pointer;
 }
 .iconbutton img{
     width: 30px;
@@ -234,4 +235,64 @@
 .songtime{
     /* padding: 10px; */
     width: 95px;
+}
+.hamburger{
+    display: none;
+}
+.cross{
+    display: none;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo>:first-child{
+    width: 100px;
+}
+@media (max-width:1400px) {
+    .left{
+        background-color: black;
+        position: absolute;
+        left: -130%;
+        transition:.1s ease-in;
+        z-index: 1;
+        width: 385px;
+    }
+    .right{
+        width: 100%;
+    }
+    .playbar{
+        width: 98%;
+    }
+    .hamburger{
+        display: block;
+        width: 40px;
+    }
+    .sign{
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+    .cross{
+        display: block;
+    }
+    .logo :nth-child(2) img{
+        width: 30px;
+    }
+    .iconbutton{
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+    .songinfo{
+        width: 100px;
+        overflow: hidden;
+    }
+    .cardContainer{
+        margin-left: 20px;
+    }
+    .card{
+        width: 300px;
+    }
 }
