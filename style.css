@@ -144,6 +144,7 @@
     background-color: aqua;
     padding: 12px;
     bottom: 0;
+    height: 40px;
 }
 .iconbutton{
     display: flex;
