@@ -50,7 +50,30 @@ async function getsong(folder) {
         });
     });
 }
-
+async function displayalbums() {
+    let a = await fetch(`http://127.0.0.1:5500/SpotifyClone/Songs/`);
+    let response = await a.text();
+    let div = document.createElement("div")
+    div.innerHTML = response;
+    let ancher = div.getElementsByTagName("a");
+    let cardcontainer = document.querySelector(".cardContainer")
+    Array.from(ancher).forEach(async e => {
+        if (e.href.includes("/Songs")) {
+            let folder = e.href.split("/").slice(-1)[0]
+            let a = await fetch(`http://127.0.0.1:5500/SpotifyClone/Songs/${folder}/info.json`);
+            let response = await a.json();
+            console.log(response)
+            cardcontainer.innerHTML = cardcontainer.innerHTML + `<div data-folder="arijit" class="card">
+                        <div class="play">
+                            <img src="img/play2.svg" alt="">
+                        </div>
+                        <img src="${response.imglink}" alt="">
+                        <h2>${response.title}</h2>
+                        <p>${response.discription}</p>
+                    </div>`
+        }
+    })
+}
 const playmusic = (track, pause = false) => {
     currsong.src = `/SpotifyClone/Songs/${currfolder}/${encodeURIComponent(track)}`;
     if (!pause) {
@@ -121,6 +144,7 @@ async function main() {
             }
         });
     });
+    displayalbums();
 }
 
 main();
