@@ -1,3 +1,7 @@
+:root{
+    --a:0;
+    --b:38px;
+}
 .container{
     background-color: black;
 }
@@ -111,11 +115,11 @@
     max-height: 70vh;
 }
 .card{
-    width:180px;
+    width:200px;
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(25,25,25);
-    margin: 8px;
+    margin: 15px;
     position: relative;
 }
 .card img{
@@ -125,18 +129,22 @@
 .card >*{
     padding-top: 5px;
 }
+.card:hover{
+    --a:1;
+    --b:110px;
+    background-color: rgb(15, 15, 15);
+}
 .play{
     width: 45px;
     height: 35px;
     position: absolute;
-    bottom: 38px;
+    bottom: var(--b);
     right: 30px;
-    opacity: 0;
-    transition: all 1s ease-out;
+    opacity: var(--a);
+    transition: all .5s ease-out;
 }
 .playbutton{
     opacity: 1;
-    bottom: 110px;
 }
 .playbar{
     width: 74vw;
@@ -251,7 +259,7 @@
 .logo>:first-child{
     width: 100px;
 }
-@media (max-width:1400px) {
+@media (max-width:1300px) {
     .left{
         background-color: black;
         position: absolute;
