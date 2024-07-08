@@ -50,30 +50,44 @@ async function getsong(folder) {
         });
     });
 }
+
 async function displayalbums() {
     let a = await fetch(`http://127.0.0.1:5500/SpotifyClone/Songs/`);
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
     let ancher = div.getElementsByTagName("a");
-    let cardcontainer = document.querySelector(".cardContainer")
+    let cardcontainer = document.querySelector(".cardContainer");
+    cardcontainer.innerHTML = "";  // Clear existing cards
     Array.from(ancher).forEach(async e => {
         if (e.href.includes("/Songs")) {
-            let folder = e.href.split("/").slice(-1)[0]
+            let folder = e.href.split("/").slice(-1)[0];
             let a = await fetch(`http://127.0.0.1:5500/SpotifyClone/Songs/${folder}/info.json`);
             let response = await a.json();
-            console.log(response)
-            cardcontainer.innerHTML = cardcontainer.innerHTML + `<div data-folder="arijit" class="card">
+            console.log(response);
+            cardcontainer.innerHTML += `<div data-folder="${folder}" class="card">
                         <div class="play">
                             <img src="img/play2.svg" alt="">
                         </div>
                         <img src="${response.imglink}" alt="">
                         <h2>${response.title}</h2>
                         <p>${response.discription}</p>
-                    </div>`
+                    </div>`;
         }
-    })
+    });
+    // Add event listeners to the cards after they are rendered
+    setTimeout(() => {
+        Array.from(document.getElementsByClassName("card")).forEach(e => {
+            e.addEventListener("click", async item => {
+                await getsong(item.currentTarget.dataset.folder);
+                if (songs.length > 0) {
+                    playmusic(songs[0], true);
+                }
+            });
+        });
+    }, 1000);
 }
+
 const playmusic = (track, pause = false) => {
     currsong.src = `/SpotifyClone/Songs/${currfolder}/${encodeURIComponent(track)}`;
     if (!pause) {
@@ -136,14 +150,6 @@ async function main() {
         }
     });
 
-    Array.from(document.getElementsByClassName("card")).forEach(e => {
-        e.addEventListener("click", async item => {
-            await getsong(item.currentTarget.dataset.folder);
-            if (songs.length > 0) {
-                playmusic(songs[0], true);
-            }
-        });
-    });
     displayalbums();
 }
 
