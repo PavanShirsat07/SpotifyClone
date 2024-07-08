@@ -49,12 +49,17 @@ async function getsong(folder) {
             playmusic(songs[index]);
         });
     });
+
+    // Play the first song if there are any songs in the list
+    if (songs.length > 0) {
+        playmusic(songs[0]);
+    }
 }
 
 async function displayalbums() {
     let a = await fetch(`http://127.0.0.1:5500/SpotifyClone/Songs/`);
     let response = await a.text();
-    let div = document.createElement("div")
+    let div = document.createElement("div");
     div.innerHTML = response;
     let ancher = div.getElementsByTagName("a");
     let cardcontainer = document.querySelector(".cardContainer");
@@ -80,9 +85,6 @@ async function displayalbums() {
         Array.from(document.getElementsByClassName("card")).forEach(e => {
             e.addEventListener("click", async item => {
                 await getsong(item.currentTarget.dataset.folder);
-                if (songs.length > 0) {
-                    playmusic(songs[0], true);
-                }
             });
         });
     }, 1000);

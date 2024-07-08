@@ -121,6 +121,7 @@
     background-color: rgb(25,25,25);
     margin: 15px;
     position: relative;
+    cursor: pointer;
 }
 .card img{
     width: 100%;
