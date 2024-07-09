@@ -57,6 +57,8 @@
     background-color: rgb(10, 10, 10);
     border-radius: 7px;
     align-items: center;
+    opacity: .8;
+    position: sticky;
 }
 .arrow img{
     width: 20px;
@@ -72,6 +74,7 @@
     width: 90px;
     font-weight: bolder;
     font-size: 14px;
+    opacity: 1;
 }
 .log_in:hover{
     font-size: 16px;
@@ -84,6 +87,7 @@
     height: 32px;
     width: 32px;
     cursor: pointer;
+    opacity: 1;
 }
 .sign_up{
     background-color: rgb(10, 10, 10);
@@ -95,6 +99,7 @@
     width: 110px;
     font-weight: bolder;
     font-size: 15px;
+    opacity: 1;
 }
 .sign_up:hover{
     font-size: 16px;
@@ -106,7 +111,7 @@
     padding-left: 10px;
 }
 .spotifyplaylist{
-    padding: 15px;
+    padding: 0 15px;
 }
 .cardContainer{
     display: flex;
@@ -152,7 +157,7 @@
     position:fixed;
     background-color: rgb(54, 54, 54);
     padding: 5px;
-    bottom: 20px;
+    bottom: 8px;
     border-radius: 20px;
 
 }
@@ -304,4 +309,90 @@
     .card{
         width: 300px;
     }
+}
+.cardplaylist{
+    width: 97%;
+    height: 79vh;
+    display:none;
+    background-color:rgb(66, 66, 66);
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+.cardContainer{
+    /* display:none; */
+}
+.imgname{
+    width:99%;
+    height: 35vh;
+    background-color: rgb(31 31 31);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    box-shadow: 0 10px 10px -5px rgba(30, 30, 30, 0.5);}
+.imgname img{
+    width: 200px;
+    border-radius: 10px;
+}
+.singername h1{
+    font-size:90px;
+    margin-bottom: 2px;
+    font-weight: 900;
+}
+.singername p{
+    color: gainsboro;
+}
+.svgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    width: 98.9%;
+    padding-top: 15px;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 0 20px 10px -5px rgba(9, 9, 9, 0.5);
+padding-bottom:5px ;}
+.svgs :nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+.svgdiv{
+    display: flex;
+    gap: 20px;
+}
+.svgdiv img{
+    width: 60px;
+}
+.slist ul li{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 20px;
+    color: rgb(24, 24, 24);
+    font-size: 15px;
+}
+.slist{
+    padding-left: 20px;
+    padding-right: 15px;
+    /* padding-bottom: 5px; */
+}
+.slist ul li{
+    padding: 10px
+}
+
+.sinfo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+.title{
+    padding-left: 5px;
 }

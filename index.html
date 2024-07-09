@@ -14,8 +14,9 @@
     <div class="container flex">
         <div class="left">
             <div class="home p1 gray m1 rounded" style="padding: 22px;">
-                <div class="logo"><img src="img/logo.svg" class="invert" alt=""> 
-                <div class="cross"><img src="img/cross.svg" class="invert cross" alt=""></div></div>
+                <div class="logo"><img src="img/logo.svg" class="invert" alt="">
+                    <div class="cross"><img src="img/cross.svg" class="invert cross" alt=""></div>
+                </div>
                 <ul>
                     <li> <img src="img/Home.svg" class="invert" alt="Home">Home</li>
                     <li> <img src="img/Search.svg" class="invert" alt="Search">Search</li>
@@ -48,8 +49,8 @@
             <div class="header flex">
                 <img src="img/hamburger.svg" class="hamburger invert" alt="">
                 <div class="arrow">
-                    <button><img src="img/left.svg" class="invert" alt=""></button>
-                    <button><img src="img/right.svg" class="invert" alt=""></button>
+                    <button><img src="img/left.svg" class="invert leftarrow" alt=""></button>
+                    <button><img src="img/right.svg" class="invert rightarrow" alt=""></button>
                 </div>
                 <div class="sign">
                     <button class="sign_up" onclick="main()">Sign up</button>
@@ -57,6 +58,45 @@
                 </div>
             </div>
             <div class="spotifyplaylist">
+                <div class="cardplaylist">
+                    <div class="imgname">
+                            <img src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                                alt="">
+                            <div class="singername">
+                                <h1>Arijit Singh Radio</h1>
+                                <p> With Neha Kakkar, Pritam, KK and more</p>
+                            </div>
+                    </div>
+                    <div class="svgs">
+                        <div class="svgdiv">
+                            <img src="img/play2.svg" alt="">
+                            <img src="img/hurt.svg" style="width: 40px;" alt="">
+                            <img src="img/dots.svg" style="width: 40px;" alt="">
+                        </div>
+                        <div>
+                            <h3>List</h3> <img src="img/hamburger.svg" style="width: 30px;" class="invert" alt="">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <div>
+                            # Title
+                        </div>
+                        <div>
+                            time
+                        </div>
+                    </div>
+                    <div class="slist">
+                        <ul>
+                            <li>
+                                <div class="sinfo">
+                                    <img src="img/music.svg" alt="">
+                                    <p>Song Name </p>
+                                </div>
+                                <div class="stime">00:00</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <h1>Spotify Playlists</h1>
                 <div class="cardContainer p1">
                     <!-- <div data-folder="arijit" class="card">
@@ -83,14 +123,14 @@
                     </div>
                 </div>
                 <div class="abovebar">
-                <div class="songinfo"></div>
-                <div class="iconbutton invert">
-                    <img id="previous" src="img/pre.svg" alt="">
-                    <img id="play" src="img/play.svg" alt="">
-                    <img id="next"src="img/next.svg" alt="">
+                    <div class="songinfo"></div>
+                    <div class="iconbutton invert">
+                        <img id="previous" src="img/pre.svg" alt="">
+                        <img id="play" src="img/play.svg" alt="">
+                        <img id="next" src="img/next.svg" alt="">
+                    </div>
+                    <div class="songtime"></div>
                 </div>
-                <div class="songtime"></div>
-            </div>
             </div>
         </div>
     </div>
